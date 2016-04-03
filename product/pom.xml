@@ -11,7 +11,7 @@
     <description>Services for product details</description>
 
     <parent>
-        <groupId>org.bigtech</groupId>
+        <groupId>io.tguduru.spring.cloud</groupId>
         <artifactId>ecommerce</artifactId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>

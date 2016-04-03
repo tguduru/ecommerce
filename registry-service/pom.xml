@@ -4,18 +4,18 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>io.tguduru.spring.cloud</groupId>
-	<artifactId>service-registry</artifactId>
+	<artifactId>registry-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>jar</packaging>
 
 	<name>Registry for all services</name>
 	<description>Registry for all services</description>
 
-    <parent>
-        <groupId>org.bigtech</groupId>
-        <artifactId>ecommerce</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
+	<parent>
+		<groupId>io.tguduru.spring.cloud</groupId>
+		<artifactId>ecommerce</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 
     <properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

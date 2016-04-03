@@ -10,11 +10,11 @@
 	<name>Order Details</name>
 	<description>Services for order details</description>
 
-    <parent>
-        <groupId>org.bigtech</groupId>
-        <artifactId>ecommerce</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
-    </parent>
+	<parent>
+		<groupId>io.tguduru.spring.cloud</groupId>
+		<artifactId>ecommerce</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
