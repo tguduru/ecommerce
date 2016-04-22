@@ -7,9 +7,16 @@ package io.tguduru.spring.cloud.customer.model;
  */
 public class Customer {
     private long id;
-    private String fullName;
-    private String emailAddress;
-    private Address address;
+    private String name;
+    private String email;
+    private String streetName;
+    private String city;
+    private String state;
+    private String country;
+    private String zip;
+
+    public Customer() {
+    }
 
     public long getId() {
         return id;
@@ -19,37 +26,73 @@ public class Customer {
         this.id = id;
     }
 
-    public String getFullName() {
-        return fullName;
+    public String getName() {
+        return name;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getEmailAddress() {
-        return emailAddress;
+    public String getEmail() {
+        return email;
     }
 
-    public void setEmailAddress(String emailAddress) {
-        this.emailAddress = emailAddress;
+    public void setEmail(String email) {
+        this.email = email;
     }
 
-    public Address getAddress() {
-        return address;
+    public String getStreetName() {
+        return streetName;
     }
 
-    public void setAddress(Address address) {
-        this.address = address;
+    public void setStreetName(String streetName) {
+        this.streetName = streetName;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public void setState(String state) {
+        this.state = state;
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public String getZip() {
+        return zip;
+    }
+
+    public void setZip(String zip) {
+        this.zip = zip;
     }
 
     @Override
     public String toString() {
         final StringBuilder sb = new StringBuilder("Customer{");
         sb.append("id=").append(id);
-        sb.append(", fullName='").append(fullName).append('\'');
-        sb.append(", emailAddress='").append(emailAddress).append('\'');
-        sb.append(", address=").append(address);
+        sb.append(", name='").append(name).append('\'');
+        sb.append(", email='").append(email).append('\'');
+        sb.append(", streetName='").append(streetName).append('\'');
+        sb.append(", city='").append(city).append('\'');
+        sb.append(", state='").append(state).append('\'');
+        sb.append(", country='").append(country).append('\'');
+        sb.append(", zip='").append(zip).append('\'');
         sb.append('}');
         return sb.toString();
     }

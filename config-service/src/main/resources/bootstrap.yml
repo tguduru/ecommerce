@@ -1,0 +1,10 @@
+# Server Configuration
+spring:
+  application:
+    name: ConfigService
+
+server:
+  port: 7777
+  address: localhost
+management:
+    port: 7778

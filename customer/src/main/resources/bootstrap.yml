@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: Customer
+  cloud:
+    config:
+      uri: http://localhost:7777
+
+server:
+  port: 8888
+  address: localhost
+management:
+    port: 8889
