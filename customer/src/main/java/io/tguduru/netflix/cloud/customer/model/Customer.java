@@ -1,7 +1,8 @@
-package io.tguduru.spring.cloud.customer.model;
+package io.tguduru.netflix.cloud.customer.model;
 
 /**
  * Customer Model
+ *
  * @author Guduru, Thirupathi Reddy
  * @modified 4/2/16
  */
@@ -15,14 +16,22 @@ public class Customer {
     private String country;
     private String zip;
 
-    public Customer() {
+    public Customer(final long id, final String name, final String email, final String streetName, final String city, final String state, final String country, final String zip) {
+        this.id = id;
+        this.name = name;
+        this.email = email;
+        this.streetName = streetName;
+        this.city = city;
+        this.state = state;
+        this.country = country;
+        this.zip = zip;
     }
 
     public long getId() {
         return id;
     }
 
-    public void setId(long id) {
+    public void setId(final long id) {
         this.id = id;
     }
 
@@ -30,7 +39,7 @@ public class Customer {
         return name;
     }
 
-    public void setName(String name) {
+    public void setName(final String name) {
         this.name = name;
     }
 
@@ -38,7 +47,7 @@ public class Customer {
         return email;
     }
 
-    public void setEmail(String email) {
+    public void setEmail(final String email) {
         this.email = email;
     }
 
@@ -46,7 +55,7 @@ public class Customer {
         return streetName;
     }
 
-    public void setStreetName(String streetName) {
+    public void setStreetName(final String streetName) {
         this.streetName = streetName;
     }
 
@@ -54,7 +63,7 @@ public class Customer {
         return city;
     }
 
-    public void setCity(String city) {
+    public void setCity(final String city) {
         this.city = city;
     }
 
@@ -62,7 +71,7 @@ public class Customer {
         return state;
     }
 
-    public void setState(String state) {
+    public void setState(final String state) {
         this.state = state;
     }
 
@@ -70,7 +79,7 @@ public class Customer {
         return country;
     }
 
-    public void setCountry(String country) {
+    public void setCountry(final String country) {
         this.country = country;
     }
 
@@ -78,7 +87,7 @@ public class Customer {
         return zip;
     }
 
-    public void setZip(String zip) {
+    public void setZip(final String zip) {
         this.zip = zip;
     }
 
